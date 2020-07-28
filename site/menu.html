@@ -3,11 +3,15 @@
 
 <head>
     <title>BeachFooD</title>
+    <!-- -->
+    <meta name="description" content="BeachFooD Pizza, comanda si livrari la domiciliu">
+    <meta name="keywords" content="pizza, navodari, complex, modern, constanta, mamaia, comanda, acasa, bauturi, desert, pizzerie, gratis, meniuri, meniuri a la chef, fresh, food, grill, gratis, livrari, domiciliu, fast, food">
+    <meta name="author" content="alexxu2375@gmail.com">
     <!-- for language symbols -->
     <meta charset="utf-8" />
     <!-- stylesheets and scripts -->
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <script src=""></script>
+    <script src="scripts/tooltip.js"></script>
 
 </head>
 
@@ -15,7 +19,7 @@
 
     <div id="header">
         <img id="header-img" src="images/header.jpg" />
-        <p id="header-text">Motto</p>
+        <p id="header-text">BeachFooD Pizza</p>
     </div>
 
     <div id="menu">
@@ -29,12 +33,176 @@
     </div>
 
     <div id="main-body">
+        <h2>Meniu Pizza</h2>
         <hr />
-
+        <table style="width: 100%;" border="0">
+            <tbody>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th bgcolor="gold" style="text-align: center; padding: 0px 5px;">medie</th>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this, 'pizza-quattro-stagioni.png')" onmouseout="document.getElementById('tooltip').style.display = 'none';">
+                    <td><strong>Pizza Quattro Stagioni</strong>&nbsp;<br>șuncă, salam, ciuperci, măsline, mozzrella</td>
+                    <td style="font-weight: bold; text-align: center;">28&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this,'pizza-quattro-formaggi.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Quattro Formaggi</strong>&nbsp;<br>gorgonzola, parmezan, brie, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">31&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this,'pizza-chef.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Chef</strong>&nbsp;<br>prosciutto crudo, rucola, roșii cherry, parmezan, mozzarella  </td>
+                    <td style="font-weight: bold; text-align: center;">32&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this,'pizza-vip.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza VIP</strong>&nbsp;<br>pui, bacon, ciuperci, porumb, roșii, ceapă</td>
+                    <td style="font-weight: bold; text-align: center;">33&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this,'pizza-rustica.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Rustică</strong>&nbsp;<br>șuncă, cabanos, ciuperci, ceapă, ardei gras, măsline, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">31&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this,'pizza-diavola.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Diavola</strong>&nbsp;<br>salam picant, măsline, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">31&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this,'pizza-al-tonno.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Al Tonno</strong>&nbsp;<br>ton, măsline, ceapă, porumb, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">31&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this,'pizza-margherita.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Margherita</strong>&nbsp;<br>roșii, oregano / busuioc, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">26&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this,'pizza-vegetariana.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Pizza Vegetariana</strong>&nbsp;<br>ciuperci, ardei gras, ceapă, măsline, roșii, porumb, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">27&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this,'calzone-special.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Calzone Special</strong>&nbsp;<br>bacon, roșii, ardei, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">28&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white" onmousemove="showTooltip(this,'calzone-stagioni.jpg')" onmouseout="document.getElementById('tooltip').style.display ='none';">
+                    <td><strong>Calzone Stagioni</strong>&nbsp;<br>șuncp, ciuperci, măsline, mozzarella</td>
+                    <td style="font-weight: bold; text-align: center;">28&nbsp;LEI</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <h2>Meniu deserturi</h2>
+        <hr />
+        <table style="width: 100%;" border="0">
+            <tbody>
+                <tr bgcolor="#a0a0a0" onmousemove="showTooltip(this, 'dolce-di-notte.jpg')" onmouseout="document.getElementById('tooltip').style.display = 'none';">
+                    <td><strong>Dolce Di Notte</strong>&nbsp;<br>nutella, kiwi, fructe de pădure</td>
+                    <td style="font-weight: bold; text-align: center;">15&nbsp;LEI</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <h2>Meniu băuturi</h2>
+        <hr />
+        <table style="width: 100%;" border="0">
+            <tbody>
+                <tr bgcolor="white">
+                    <td><strong>Heineken</strong>&nbsp;(330ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Heineken(fără alcool)</strong>&nbsp;(330ml)</td>
+                    <td style="font-weight: bold; text-align: center;">7&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Ciuc</strong>&nbsp;(330ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Apă Dorna(plată)</strong>&nbsp;(330ml)</td>
+                    <td style="font-weight: bold; text-align: center;">5&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Apă Dorna(plată)</strong>&nbsp;(750ml)</td>
+                    <td style="font-weight: bold; text-align: center;">10&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Apă Dorna(minerală)</strong>&nbsp;(330ml)</td>
+                    <td style="font-weight: bold; text-align: center;">5&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Apă Dorna(minerală)</strong>&nbsp;(750ml)</td>
+                    <td style="font-weight: bold; text-align: center;">10&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Coca Cola</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Coca Cola Zero</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Fanta Madness Struguri</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Fanta Zero Lămâie</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Fanta Portocale</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Sprite Fresh</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Schweppes Bitter Lemon</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">7&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Schweppes Tonic Water</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">7&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Schweppes Mandarin</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">7&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Cappy Nectar Vișine</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Cappy Nectar Portocale</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Cappy Nectar Portocale Roșii</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Fuzetea Peach Hibiscus</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Fuzetea Lemongrass</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">8&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="#a0a0a0">
+                    <td><strong>Burn</strong>&nbsp;(250ml)</td>
+                    <td style="font-weight: bold; text-align: center;">9&nbsp;LEI</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td><strong>Cafea</strong>&nbsp;(50ml)</td>
+                    <td style="font-weight: bold; text-align: center;">6&nbsp;LEI</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
+	<div id="tooltip"></div>
+
     <div id="footer">
-        <marquee id="footer-text">BeachFooD Pizza - Another motto</marquee>
+         <marquee id="footer-text">BeachFooD Pizza - Simply the best</marquee>
     </div>
 
 </body>

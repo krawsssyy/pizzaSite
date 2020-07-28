@@ -54,7 +54,7 @@ body {
 #footer-text { 
     margin-top:20px;
     padding:10px;
-    font-size:30px;
+    font-size:20px;
     font-weight:bold;
 }
 
@@ -63,4 +63,24 @@ body {
     margin-bottom:100px;
     font-size:30px;
     margin-top:100px;
+}
+
+#tooltip {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 50%;
+    margin-left: -125px;
+    width: 250px;
+    height: 250px;
+    border: 3px #ffd100 double;
+    background-color: white;
+    z-index: 999;
+    -webkit-box-shadow: 3px 3px 3px gray;
+    -webkit-border-radius: 5px;
+}
+
+#tooltip img {
+    width:250px;
+    height:250px;
 }
