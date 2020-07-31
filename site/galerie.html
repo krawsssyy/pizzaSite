@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BeachFooD</title>
+    <!-- -->
+    <meta name="description" content="BeachFooD Pizza, comanda si livrari la domiciliu">
+    <meta name="keywords" content="pizza, navodari, complex, modern, constanta, mamaia, comanda, acasa, bauturi, desert, pizzerie, gratis, meniuri, meniuri a la chef, fresh, food, grill, gratis, livrari, domiciliu, fast, food">
+    <meta name="author" content="alexxu2375@gmail.com">
+    <!-- for language symbols -->
+    <meta charset="utf-8" />
+    <!-- stylesheets and scripts -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src=""></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <img id="header-img" src="images/header.jpg" />
+        <p id="header-text">BeachFooD Pizza</p>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Pagina principală</a></li>
+            <li><a href="menu.html">Meniu</a></li>
+            <li><a href="order.html">Comandă acum</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="info.html">Despre noi</a></li>
+        </ul>
+    </div>
+
+    <h2 style="text-align:center;color:white;">Galerie</h2>
+    <!-- Container for the image gallery -->
+    <div id="main-body">
+        <p id="numbertext"></p>
+        <center><img class="mySlides" src="images/1.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/2.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/3.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/4.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/5.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/6.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/7.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/8.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/9.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/10.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/11.jpg" style="width:800px;height:800px;"></center>
+        <center><img class="mySlides" src="images/12.jpg" style="width:800px;height:800px;"></center>
+        <script>
+            var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  var res = String(slideIndex) + " / 12";
+  document.getElementById("numbertext").innerHTML = res;
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+        </script>
+    </div>
+
+</body>
+
+</html>

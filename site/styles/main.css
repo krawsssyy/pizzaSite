@@ -5,9 +5,6 @@
 #menu { height:75px;
 }
 
-#main-body {
-    
-}
 
 #footer { 
           height:50px;
@@ -19,8 +16,8 @@ ul {
     margin-top:6px;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
-    border:1px solid #333333;
+    background-color: #111111;
+    border:1px solid #111111;
     border-radius:10px;
 }
 
@@ -37,7 +34,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111111;
+  background-color: #222222;
 }
 
 #header-img {
@@ -48,7 +45,7 @@ li a:hover {
 }
 
 body {
-    background-color: #F99847;
+    background-color: #270C0C;
 }
 
 #footer-text { 
@@ -56,15 +53,17 @@ body {
     padding:10px;
     font-size:20px;
     font-weight:bold;
+    bottom:0;
 }
 
 #header-text {
     display: inline-block;
     margin-bottom: 100px;
     margin-top: 100px;
-    font-family: 'Pacifico', cursive;
+    font-family: "Brush Script MT", cursive;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
 }
 
 #tooltip {
@@ -88,10 +87,23 @@ body {
 }
 
 p a {
-    color:blue;
-    text-decoration:none;
+    color: #427D93;
+    text-decoration: none;
 }
 p a:hover{
     color:white;
 }
 
+td {
+    color:white;
+}
+
+.mySlides {
+    border-radius:10px;
+}
+
+#numbertext {
+    text-align:center;
+    color:white;
+    font-size:24px;
+}
